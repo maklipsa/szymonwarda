@@ -2,7 +2,7 @@
 layout: post
 title: Why use a service mesh? A few arguments
 description: "Kubernetes is THE topic of discussions in IT now. I would argue that it is only an intermediate step."
-modified: 2019-07-22
+modified: 2019-07-30
 tags: [kubernetes, k8s, service mesh, architecture]
 image:
   feature: data/2019-07-29-Why-use-a-service-mesh-a-few-arguments/logo.jpg
