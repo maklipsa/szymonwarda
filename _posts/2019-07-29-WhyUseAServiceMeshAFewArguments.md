@@ -136,7 +136,7 @@ We will end up with something like this :
 ```csharp
 Timer t = Timer.Start();
 
-_http.Get("http://google.com)
+_http.Get("http://google.com");
 
 t.Stop()
 _metrics.ReportTime("googlecall",t.ElapsedMilliseconds);
