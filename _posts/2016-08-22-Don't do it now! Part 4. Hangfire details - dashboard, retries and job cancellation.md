@@ -35,6 +35,8 @@ And this brings us to the main motives of this post:
 - the ability to delete a job
 - job cancellation
 
+{% include /newsletter.html %}
+
 ## Auto retry
 This one is easy. Hangfire will auto retry every job that failed (timeouted or thrown an exception) configurable [amount of times](http://docs.hangfire.io/en/latest/background-processing/dealing-with-exceptions.html) (10 by default). Each retry is an equivalent to normal enqueuing, so it lands at the end of the queue.
 

@@ -86,6 +86,8 @@ Because `salt` and `pepper` are very popular ingredients, their weight will be v
 
 So, for now, the model looks good.
 
+{% include /newsletter.html %}
+
 ## Calculating the vector
  
 Let's transfer all this knowledge into code:

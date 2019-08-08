@@ -203,6 +203,8 @@ Some things to point out:
 - `Setup` will be called before every test because of the `PerfSetup` attribute.
 - Running `GC.Collect(n)` will cause garbage collection on all generation up to and with n-th generation.
 
+{% include /newsletter.html %}
+
 # Running the test in NBench
 
 First thing to note is that NBench requires it's own runner (it is avilable on [nuget](https://www.nuget.org/packages/NBench.Runner/)).

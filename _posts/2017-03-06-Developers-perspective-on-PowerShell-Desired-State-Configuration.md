@@ -29,6 +29,8 @@ We, as developers are used to the fact that we are operating on functions doing 
 What it implies? A LOT more things can go wrong, and not just because your code is wrong, but some external assumption were not met. <br/>
 Here learn to look for causes not only in Your code but in the whole system.
 
+{% include /newsletter.html %}
+
 ### Leaky abstraction and an unmet promise
 
 Take this code:

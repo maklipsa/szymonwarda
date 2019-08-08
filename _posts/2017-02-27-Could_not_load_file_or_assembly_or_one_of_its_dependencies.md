@@ -61,6 +61,8 @@ Windows has a build-in tool called `Fuslogvw.exe`. It should be located in sever
 Any version will do since the tool is available from [.NET version 1.1](https://msdn.microsoft.com/en-us/library/e74a18c4(v=vs.71).aspx), and the version numbers between 4.6.2 and 4.0 differ only in minor version.
 The tool is simple, so I won't describe how it works. I personally prefer the other way:
 
+{% include /newsletter.html %}
+
 ## Reading assembly binding log files (Fusion Log)
 
 This is my preferred way to diagnose. After dealing with many Microsoft loggs, I think the assembly binding ones are the best ones.
@@ -172,6 +174,8 @@ And then:
 
 Then update, build, test, commit and push.<br/>
 Things may not always be that as easy, because we can't control references that external libraries, like NuGet packages, have. This is when the second solution comes in:
+
+{% include /newsletter.html %}
 
 ### Add assembly binding redirect
 

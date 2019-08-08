@@ -46,6 +46,8 @@ If this looks complicated there is a [cron expression builder online](http://www
 
 Ok, lets get back to Hangfire and `RecurringJob` class. It has three functions (excluding the overrides):
 
+{% include /newsletter.html %}
+
 ## AddOrUpdate
 As the name suggests it enables to create or update a recurring job. Without further ado let's look at the overrides, because there are a few of them:
 

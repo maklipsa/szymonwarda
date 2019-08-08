@@ -39,6 +39,8 @@ The first one is the all powerful big boys profiler with text commands and text 
 
 Another, more important in this cases, thing lacking is the ability to show dependencies between objects and memory they allocated. So let's look at what .NET Memory profiler can do.
 
+{% include /newsletter.html %}
+
 ## .NET Memory Profiler
 > .NET Memory Profiler can have a tendency to crash after few minutes, sometimes even in less then one. As strange as it seams restarting the computer removes the problem. This happened to me 3 times.
 

@@ -22,6 +22,8 @@ It works good, but has some drawbacks:
 - IntelliSense support is quite clumsy
 - there is no compilation during development. When working on the code locally compiling the project did nothing since script files are not taken into account when compiling. This means that we are losing a lot of the benefits of a compiled language.  
 
+{% include /newsletter.html %}
+
 ### v1.1 - compiled functions
 
 Microsoft addressed most problems with script files with the introduction of compiled functions. This was not a change to how they worked since Azure Functions are hosted in WebJobs, so as IIS application. Compilation can be done two ways:

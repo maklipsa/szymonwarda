@@ -88,6 +88,8 @@ This is more than **4-times speed up** with only 1 line and no additional code c
 
 But sometimes things don't go that good.
 
+{% include /newsletter.html %}
+
 ## AsParallel on a to small set
 
 Let's change that code, and set the list size to 100. Then the results will look like that:

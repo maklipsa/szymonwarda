@@ -87,6 +87,7 @@ This approach concentrates on the features of the framework/topic at hand withou
 The benefit of not building anything big is that the code samples demonstrating the feature can be more narrowed down to showcase the problem, making them easier to understand.
 On the downside, it is less rewarding for the viewer, we have less real-life usages, and no fully working solution at the end.
 
+{% include /newsletter.html %}
 
 ### 0.3 Problem solver
 

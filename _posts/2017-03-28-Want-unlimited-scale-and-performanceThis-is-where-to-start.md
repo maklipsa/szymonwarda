@@ -75,6 +75,8 @@ Having those assumptions allow scaling such a solution horizontally easily. In t
 
 While an oversimplification, but some key-value databases use it. 
 
+{% include /newsletter.html %}
+
 # What not to expect from key-value databases
 
 If You have been living in RDMS land here are some things not to look for in key-value databases:
@@ -84,8 +86,7 @@ If You have been living in RDMS land here are some things not to look for in key
 It is very rare to see them in key-value databases. Instead, we have **atomicity**. What is the difference?
 
 - **Atomicity** - means that the operation will execute or not. In short, in the case of failure, we won't end up with corrupted or partially changed data.
-- **
-- tion** - a series of multiple operations that will execute atomicity as one.
+- **Transactionality** - a series of multiple operations that will execute atomicity as one.
 
 Is the lack of transactions a problem? No. Let's examine the cases when we would use them:
 

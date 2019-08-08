@@ -170,6 +170,8 @@ To sum up - New Relic is a powerful beast with the looks that a manager can unde
 <br/>
 <br/>
 
+{% include /newsletter.html %}
+
 <a name="Retrace"></a>
 ![Retrace](/data/2017-02-12-Choosing-centralized-logging-and-monitoring-system/retrace.png){: .logo}
 

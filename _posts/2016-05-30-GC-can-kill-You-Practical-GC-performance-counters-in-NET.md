@@ -33,6 +33,8 @@ Process Explorer is an element of [Sysinternals Suite](https://technet.microsoft
 I really like this tab, because it shows all the main performance counters for .NET programs.
 And in this case it also worked. Spending 43% (in the peeks) in GC is **not** a good thing.
 
+{% include /newsletter.html %}
+
 Just to be sure that high GC isn't caused by another issue, like exceptions let's look at **.NET CLR Exceptions** tab:
 
 ![](/data/GC-can-kill-You-Practical-GC-performance-counters-in-NET/ProcessExplorer_Exceptions.png)

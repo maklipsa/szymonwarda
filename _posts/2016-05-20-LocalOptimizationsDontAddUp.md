@@ -66,6 +66,8 @@ And I saw this:
 
 This meant one thing - I have no baseline. The results had such a huge dispersion that they didn't mean nothing.
  
+{% include /newsletter.html %}
+
 My Excel showed this:
 
 ![](/data/LocalOptimizationsDontAddUp/Excel01.png)

@@ -111,6 +111,8 @@ What divide and conquer is doing is simulating a [binary tree](https://en.wikipe
 
 Since my tree is fully balanced (equal number of nodes on the left and right) its max depth is equal to `log n`. With `n` equal to a number of leafs in the tree. I am doing a brute force iteration over the last 4 elements so my number of leafs is 64/4 = 16. This means that I'll be doing **from 5 to 9 checks** in the worst case. Looks promising.
 
+{% include /newsletter.html %}
+
 ## Performance results
 
 How did it affect performance? The [last best sample run](/Making-bits-faster/) took **297 seconds**. With divide and conquer it takes **283 seconds**. This translates to:

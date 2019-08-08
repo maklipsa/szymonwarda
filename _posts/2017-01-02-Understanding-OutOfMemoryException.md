@@ -96,6 +96,8 @@ One number is the same (there is a slight difference due to my computer crashing
 
 To fully understand why did I get `OutOfMemoryException` while still having much RAM memory free we will have to understand, at least a bit, memory allocation in Windows and .NET Framework.
 
+{% include /newsletter.html %}
+
 ## Windows, memory allocation and .NET Framework
 
 So how I ended up with ~800MB `Working Set`, ~45 times larger `Private Byes` an `OutOfMemoryException` and `Your system is low on memory` message from Windows? This has to do with the way .NET Framework behaves.

@@ -124,6 +124,8 @@ And minuses:
 - we are storing a lot of duplicated data.
 - getting the information who changed a particular field is a non-trivial task.
 
+{% include /newsletter.html %}
+
 # Alternative solution
 
 All the above solutions can be implemented in SQL and noSQL databases, but they were designed with the first in mind.

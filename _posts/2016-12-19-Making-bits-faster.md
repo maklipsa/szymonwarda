@@ -58,6 +58,8 @@ static bool IsBitSet(long b, int pos)
 
 It is using bit operations that are very fast, so what can be done better?
 
+{% include /newsletter.html %}
+
 ## Bit mask precalculation
 
 His suggestion was to get rid of bit shifting and have the mask ready. This way I will get rid of `IsBitSet` and end up with `GetNonZeroIndexes` looking like this:  

@@ -109,6 +109,8 @@ where:
 
 So the next step will be:
  
+{% include /newsletter.html %}
+
 ## Optimising
 
 ### Less means faster

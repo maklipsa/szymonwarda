@@ -84,6 +84,7 @@ What can I improve there?
 - remove the ifs at the start, because I like my performance unchecked ;)
 - `BitArray` is using array of `int` as storage and I think using a `long` be a bit faster
 
+{% include /newsletter.html %}
 
 ### Custom BitArray implementation
 

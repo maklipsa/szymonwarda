@@ -81,6 +81,8 @@ What will happen is SQL Server engine will unwind the query fetching results unt
 There are some limits to this approach.
 - As with most  (all to my knowledge) programming languages, there is a limit to this recursion. In case of SQL Server it is [100 by default](https://stackoverflow.com/questions/2644281/how-many-maximum-recursion-possible-for-cte-in-sql-server) but [can be changed to 32,767](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/db9187df-5c0e-4fe6-bcb7-5d8039fab279/capacity-of-cte?forum=sqldatabaseengine). With OLTP (**O**n**l**ine **T**ransaction **P**rocessing) loads this shouldn't be a problem. For reporting (OLAP - **O**n**l**ine **A**nalytics **P**rocessing), you should be denormalizing your data anyway.
 
+{% include /newsletter.html %}
+
 # Modeling hierarchy in noSQL database or without CTE 
 
 Techniques for modeling hierarchy efficiently can be applied in noSQL databases and in SQL databases without the support for CTE.

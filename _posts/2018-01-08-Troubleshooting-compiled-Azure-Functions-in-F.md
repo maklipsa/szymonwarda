@@ -74,6 +74,8 @@ Confirm that the path in the <Import> declaration is correct, and that the file 
 
 It is a standard MSBuild output indicating that a `.props` (the same as `.target`. [MSBuild doesn't care about the extension](https://blogs.msdn.microsoft.com/msbuild/2010/02/25/getting-started-with-msbuild/)) file is missing. Lets check is the file really missing.
 
+{% include /newsletter.html %}
+
 ## Azure Functions Advanced tools (Kudu)
 
 Azure functions offer a way to look into the underlying machine that is serving our functions - **Kudu**. It can be accessed in two ways:

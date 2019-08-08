@@ -41,6 +41,8 @@ Those points are what, for me, defines a database. The core functionalities that
 
 Only three points? Yes, but remember, we are talking about the must haves.
 
+{% include /newsletter.html %}
+
 ### Should-haves
 
 So this is where I put all the theoretical features mumbling? Not exactly, here are my **should-haves**:
