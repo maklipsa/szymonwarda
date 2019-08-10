@@ -59,7 +59,7 @@ Even if we could test the `ILogger` call, we still shouldn't do it. Let me show 
     }
 ```
 
-It might look reasonable to try to mock the `LogInformation` of the `ILogger` to verify if the business process logs register attempts. 
+It might look reasonable to try to mock the `LogInformation` of the `ILogger` to verify if the business process logs registration attempts.
 
 When testing if a business process logs some information, we should be testing the **business intent**. 
 By testing the `ILogger` call, we are testing the **implementation**. Those two are mixed in the code above, causing our problems.
@@ -92,7 +92,7 @@ If we split the implementation from the intent, our work will be much more strai
     }
 ```
 
-Now for a simple test:
+Now for a simple test (used Moq, but any mocking framework will do):
 
 ```csharp
     public class UserServiceTests
@@ -137,7 +137,7 @@ An even better idea is to refactor the audit logging function into a class. Sinc
 
 ## We aren't testing the same thing!
 
-No, aren't. We are missing one test. One that will call `LogRegisterAttempt`, read the log file and verify if it has the log entry - a simple integration test. I leave it to the reader ;)
+No, we aren't. We are missing one test. One that will call `LogRegisterAttempt`, read the log file and verify if it has the log entry - a simple integration test. I leave it to the reader ;)
  
 # Conclusion
 
@@ -147,5 +147,5 @@ Testing is not only writing test code. It is also looking at the existing code a
     <div class="button" >
 If something is hard to test, it means that it is badly written. <br/> 
 <b>or</b>
-<br/> You are trying to tests something that shouldn't be tested this way. </div>
+<br/> You are trying to test something that shouldn't be tested in this way.</div>
 </div>
