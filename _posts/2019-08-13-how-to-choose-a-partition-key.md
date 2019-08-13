@@ -64,6 +64,8 @@ From the application logic, it is just like any other required property. With on
 
 Why?
 
+{% include /newsletter.html %}
+
 ### Why partition keys values can't be changed?
 
 Let's think about it. We know that:
