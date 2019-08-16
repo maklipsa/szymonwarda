@@ -18,10 +18,14 @@ With .NET from version 1.1 and with web development from the time when IE6 was t
 
 - [At conferences](/speaking)
 - [Featured on other sites](/featuredIn)
-- Social and external links
+
+## Contact
+
+- Just drop an email at maklipsa at gmail dot com
+
+## Social
 
 [![LinkedIn](LinkedIn.png)](https://linkedin.com/in/szymonwarda)[![Twitter](Twitter.png)](https://twitter.com/maklipsa)[![GitHub](GitHub-Logo.png)](https://github.com/maklipsa)[![Paper call](logo-papercall.svg)](https://www.papercall.io/speakers/szymonwarda)
-
 
 <style>
 div.entry-content p:first-child img{
