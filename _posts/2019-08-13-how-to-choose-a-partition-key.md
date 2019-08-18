@@ -41,7 +41,7 @@ To not override data Cosmos DB and DynamoDB uses optimistic locking. It guarante
 
 Therefore not platform failure, but changes executed between operations will be the main reason why we might want to revert changes.
 
-> I wrote how to simulate transaction isolation on noSQL databases in the [previous post](/modeling-version-and-temporary-state-in-nosql-databases/).
+> I wrote how to simulate transaction isolation on noSQL databases in the [previous post](/Modeling-version-and-temporary-state-in-noSQL-databases/).
 
 ## 2. Size limitation
 
