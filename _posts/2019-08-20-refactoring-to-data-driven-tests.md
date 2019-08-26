@@ -4,6 +4,7 @@ title: Refactoring to Data Driven Tests
 description: "I don't like writing tests. They are repetitive and boring. But I found a way to write them less and have more tested."
 modified: 2019-08-20
 tags: [dotnet, testing, NUnit, XUnit, DDT, craft, data driven testing, tests]
+series: "Data-Driven Testing"
 image:
  feature: data/2019-08-20-refactoring-to-data-driven-tests/logo.jpg
 ---
