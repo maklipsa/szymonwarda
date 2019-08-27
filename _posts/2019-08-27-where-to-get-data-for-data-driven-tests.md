@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to get data for DDT?
+title: How to get data for Data-Driven Tests?
 description: "Test code is only there to pass proper data.  This entry is how to get the data."
 modified: 2019-08-27
 tags: [dotnet, testing, NUnit, XUnit, DDT, craft, data-driven testing, tests]
 series: "Data-Driven Testing"
 image:
- feature: data/2019-08-27-DDT-files/logo.jpg
+ feature: data/2019-08-27-where-to-get-data-for-data-driven-tests/logo.jpg
 ---
 
 The [previous post](/refactoring-to-data-driven-tests/) was meant to be an encouragement and a warmup to data-driven testing. This post describes why I love this way of testing.
@@ -44,7 +44,9 @@ But we need the data to test the code. How to get it?
 
 Where to get better test data? That is simple - from the users. A user of our code is a developer, a tester, or a triggered job that will call it. In this case
 
-User = someone who uses our code.
+<div class="center">
+    <div class="button" >User = someone who uses our code.</div>
+</div>
 
 All we need to do is to log the call data. This functionality can be already implemented or might require some tinkering in our app. Let's examine a few usages.
 
@@ -86,7 +88,7 @@ For this I use Hangfire.
 It makes it even simpler than messaging. Hangfire displays execution parameters with the thrown error in the Hangfire dashboard:
 
 <center>
- <img alt="Hangfire" src="/data/2019-08-27-DDT-files/hangfire.png" />
+ <img alt="Hangfire" src="/data/2019-08-27-where-to-get-data-for-data-driven-tests/hangfire.png" />
 </center>
 
 ## MVC/WebApi
@@ -120,7 +122,7 @@ How to do it better?
 The more pinpointed the logging, the better. Ideally, every vital method that has a data-driven test should be logging call data. Here, we might encounter the **banana problem**.
 
 <center>
- <img alt="you wanted a banana but what you got was a gorilla holding the banana and the entire jungle" src="/data/2019-08-27-DDT-files/gorilla.png" />
+ <img alt="you wanted a banana but what you got was a gorilla holding the banana and the entire jungle" src="/data/2019-08-27-where-to-get-data-for-data-driven-tests/gorilla.png" />
 </center>
 
 Trying to serialize `HTTPContext`, `DBContext` or anything with lazy loading might result in us trying to serialize the whole application world. 
