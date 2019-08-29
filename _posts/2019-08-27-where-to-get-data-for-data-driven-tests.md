@@ -75,6 +75,8 @@ public class MyHandler<MyMessage>{
 
 The above is a very simplified implementation designed to show the idea, so please don't use it on production. A better way to implement it is to hook this code in the code calling the handlers.
 
+{% include /newsletter.html %}
+
 ## Asynchronous processing
 
 A simplified bit easier to implement approach is to use async processing. I don't mean the use of `async` keywords in controllers, but splitting the business process into asynchronous jobs that can be processed later. 
