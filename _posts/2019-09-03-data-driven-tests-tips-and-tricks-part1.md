@@ -19,7 +19,7 @@ Here we go.
 
 # Before we begin
 
-I will be converting this series into an ebook with additional source code and examples. If You want to get it please subscribe:
+I will be converting this series into an ebook, or something like that, with additional source code and examples. If You want to get it please subscribe:
 
 {% include /newsletter.html %}
 

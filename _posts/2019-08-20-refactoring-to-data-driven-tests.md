@@ -13,6 +13,12 @@ I am not a big fan of writing tests. I like having them, but I find writing them
 
 <!--MORE-->
 
+# Before we begin
+
+I will be converting this series into an ebook, or something like that, with additional source code and examples. If You want to get it please subscribe:
+
+{% include /newsletter.html %}
+
 # Establishing the baseline
 
 Before we dig into what Data Driven Tests are, let's look at some standard, non-DDT tests.

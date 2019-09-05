@@ -14,6 +14,12 @@ Understanding a simple fact about testing moved me from "Oh, I should write test
 And the simple truth is:
 <!--MORE-->
 
+# Before we begin
+
+I will be converting this series into an ebook, or something like that, with additional source code and examples. If You want to get it please subscribe:
+
+{% include /newsletter.html %}
+
 # Data is the king
 
 Anyone who is a bit interested in machine learning heard statements like *data is the king*, *data is the new oil*, etc. The same applies to tests. Having tests provides very little value. Having tests with **the right test data provides huge value**. Let me explain. [Previously](/refactoring-to-data-driven-tests/) I wrote that I don't like writing tests. Writing tests is one of two:
