@@ -91,7 +91,7 @@ A simplified bit easier to implement approach is to use async processing. I don'
 
 For this I use Hangfire. 
 
-> A shameless plug: I wrote a [series of articles on Hangfire and how it works](/Don't%20do%20it%20now!%20Part%206.%20Hangfire%20recurring%20jobs/).
+> A shameless plug: I wrote a [series of articles on Hangfire and how it works](/Don't-do-it-now!-Part-2.-Background-tasks,-job-queuing-and-scheduling-with-Hangfire/).
 
 It makes it even simpler than messaging. Hangfire displays execution parameters with the thrown error in the Hangfire dashboard:
 
