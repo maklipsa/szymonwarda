@@ -414,7 +414,7 @@ db.inventory.find( { Name: "test" } )
 
 Corresponding to SQL query of this:
 
-```SQL
+```sql
 Select * from inventory where Name="tests"
 ```
 
@@ -426,7 +426,7 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 
 This corresponds to this SQL:
 
-```SQL
+```sql
 SELECT * FROM inventory WHERE status = "A" OR qty < 30
 ```
 
@@ -447,7 +447,7 @@ When talking about querying RavenDB, we have to separate two cases - writing in 
 
 But not all is lost for not - C# devs. There is RQL which is a mix of SQL and JavaScript looking like this:
 
-```
+```csharp
 from Inventory
 where Name = 'test'
 ```
@@ -455,14 +455,14 @@ where Name = 'test'
 The `from` at the start looks strange, but I can live with this syntax.
 Now for the second query:
 
-```
+```csharp
 from Inventory
 where status = 'A' or qty < 30
 ```
 
 For me, it is much cleaner than the one in MongoDB. Time for querying complex properties:
 
-```
+```csharp
 from Inventory
 where instock.qty = 5 and instock.warehouse = 'A'
 ```
@@ -600,7 +600,7 @@ Why do I like this feature? Adding each new component to the system means one ad
 
 **The ugly:**
 
-- ~The documentation is lacking and is very uneven how deep is each section.~ Also not a fan of the dark theme, but I know I'm in the minority.[There is an excellent book on the website that goes in-depth and beyond](https://ravendb.net/learn/inside-ravendb-book/reader/4.0/1-welcome-to-ravendb).
+- <s>The documentation is lacking and is very uneven how deep is each section.</s>[There is an excellent book on the website that goes in-depth and beyond](https://ravendb.net/learn/inside-ravendb-book/reader/4.0/1-welcome-to-ravendb). Also not a fan of the dark theme, but I know I'm in the minority.
 
 ## So, what will it be?
 
