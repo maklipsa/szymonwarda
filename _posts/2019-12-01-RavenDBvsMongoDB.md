@@ -20,6 +20,8 @@ It is NOT a good idea.
 
 <!--MORE-->
 
+{% include /newsletter.html %}
+
 # TLTR
 
 This article started as a way to structurize the comparison process but grew a bit more ( just like my [previous comparison](/Choosing-centralized-logging-and-monitoring-system/)). Here is a table of content to give you an overview and make it easier to see the sections:
@@ -184,6 +186,10 @@ The Linux base image size difference is negligible, but the Windows size differe
 
 > After some additional digging, MongoDB looked into running on Windows Nano, but they are waiting on [multi-stage build support for Windows images](https://github.com/docker-library/official-images/issues/3383). It is a valid argument, but multi-stage builds are [available only from version 17.05 of Docker for Linux images](https://docs.docker.com/develop/develop-images/multistage-build/), and we used Docker before and managed to bypass this limitation :(
 
+
+{% include /newsletter.html %}
+
+
 # Free on-premise tier
 
 Another area that requires a more in-depth look is the free tier offering. RavenDB, for a long time, discarded the need for a free tier in their product. MongoDB started as a free database and added a paid enterprise version later on.
@@ -278,6 +284,9 @@ There is also an option to enable [Scheduled Snapshots](https://docs.atlas.mongo
 
 In a simple comparison, RavenDB is a bit more expensive. But when we take into account, a proper backup behaviour the total pricing will look differently.
 As a side note, I will add that I am very happy with the move of database providers to provide managed instances in a selected cloud. It removes, or at least lowers, the need for the company to gain all operation expertise for the selected database. It makes deployments and company politics significantly simpler.
+
+
+{% include /newsletter.html %}
 
 # Clustering model
 
@@ -399,6 +408,9 @@ So how RavenDB and MongoDB compare in this area?
 
 Both support multi-document transactions, but the road to this feature was different. In RavenDB it was a design decision from the start, with MongoDB it was added in version 3.4 with a proper implementation being available just in 4.2. 
 Up to version 4.0, the transaction in MongoDB was limited to the total size of 16 MB. This limitation was removed in version 4.2.
+
+{% include /newsletter.html %}
+
 
 # Query Language
 
