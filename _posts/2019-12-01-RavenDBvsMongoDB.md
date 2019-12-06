@@ -134,7 +134,7 @@ First, let's take a very high-level overview of capabilities:
 | Querry language | custom, more [map-reduce like syntax](https://docs.mongodb.com/manual/reference/sql-comparison/) | SQL like [RQL](https://ravendb.net/docs/article-page/4.2/csharp/indexes/querying/what-is-rql)|
 | Monitoring | [Free console tools <br/> or paid OpsManager](https://docs.mongodb.com/manual/administration/monitoring/) | [free HTTP endpoint](https://ravendb.net/docs/article-page/4.2/csharp/server/administration/statistics) <br/> free [UI (Studio Manager)](https://ravendb.net/docs/article-page/4.2/csharp/studio/server/server-dashboard)
 |SNMP support | [In the paid version](https://docs.mongodb.com/manual/tutorial/monitor-with-snmp/) | [In the paid version](https://ravendb.net/buy) |
-| Clustering model | [Master-slave version with Replica Sets or sharding](https://docs.mongodb.com/manual/replication/) | [Multi-master](https://ravendb.net/docs/article-page/4.1/csharp/client-api/cluster/how-client-integrates-with-replication-and-cluster) |
+| Clustering model | [Primary-secondary version with Replica Sets or sharding](https://docs.mongodb.com/manual/replication/) | [Multi-primary](https://ravendb.net/docs/article-page/4.1/csharp/client-api/cluster/how-client-integrates-with-replication-and-cluster) |
 || | |
 || **Indexes**| |
 | Primary indexes | [Yes](https://docs.mongodb.com/manual/indexes/#default-id-index) | Yes |
@@ -305,17 +305,17 @@ Before we go into the clustering behaviour lets define the goals we want to acco
 Clustering is where those two databases show the opposite end of the design spectrum.
 
 - **MongoDB** - uses [replica sets (from version 3.4 up)](https://docs.mongodb.com/v3.4/core/master-slave/) with [database sharding as a method for horizontal scaling](https://docs.mongodb.com/manual/core/sharded-cluster-components/)
-- **RavenDB** - is a [multi-master cluster](https://ravendb.net/docs/article-page/4.2/csharp/server/clustering/overview)
+- **RavenDB** - is a [multi-primary cluster](https://ravendb.net/docs/article-page/4.2/csharp/server/clustering/overview)
 
 Interesting things start when we go deeper.
 
 ## MongoDB
 ### MongoDB replication
 
-MongoDB used to operate in a [master-slave configuration until version 3.4](https://docs.mongodb.com/v3.4/core/master-slave/). Now, master-slave replication was replaced with replica-sets. 
-What is the difference between replica-sets and master-slave replication?
+MongoDB used to operate in a [Primary-secondary configuration until version 3.4](https://docs.mongodb.com/v3.4/core/master-slave/). Now, primary-secondary replication was replaced with replica-sets. 
+What is the difference between replica-sets and primary-secondary replication?
 
-Both modes allow for **only one node** to accept all operations and, once they are committed **data is replicated to the slave nodes asynchronously**. Where the replica sets shine is what happens when the master node fails. MongoDB replica sets will do an [automatic failover](https://docs.mongodb.com/manual/replication/#automatic-failover) with automated master election from the shard nodes.
+Both modes allow for **only one node** to accept all operations and, once they are committed **data is replicated to the secondary nodes asynchronously**. Where the replica sets shine is what happens when the primary node fails. MongoDB replica sets will do an [automatic failover](https://docs.mongodb.com/manual/replication/#automatic-failover) with automated primary election from the shard nodes.
 
 ![](/data/2019-12-01-RavenDBvsMongoDB/replica-set-trigger-election.bakedsvg.svg)
 
@@ -370,7 +370,7 @@ RavenDB has a very different approach to clustering. RavenDB cluster is a group 
 This approach is more complicated, but allows for a few key features:
 
 - [**Dynamic database distribution**](https://ravendb.net/docs/article-page/4.2/csharp/server/clustering/distribution/distributed-database#dynamic-database-distribution). The cluster will rearrange which node is storing which database in case of a cluster node failure, or adding a new node to the cluster.
-- **Variable consensus level.** By default, the data is assumed as saved when one node accepts it. Then it is replicated to other master nodes. For special operations, the client can define that he wants to wait for replication to other nodes.
+- **Variable consensus level.** By default, the data is assumed as saved when one node accepts it. Then it is replicated to other primary nodes. For special operations, the client can define that he wants to wait for replication to other nodes.
 
 ### RavenDB horizontal scaling
 
