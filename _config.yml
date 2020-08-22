@@ -1,19 +1,19 @@
-title:            IndexOutOfRange
-description:      Architecture, .NET, performance, and everything I stumble upon while writing coding. 
-disqus_shortname: indexoutofrange
+title:            SzymonWarda
+description:      Architektura, chmura i wszystko inne na co natknę się w pracy 
+disqus_shortname: szymonwarda
 reading_time:     true
 words_per_minute: 200
 logo            : "avatar.jpg"
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: https://IndexOutOfRange.com
-facebook_app_id: 187217638357967 
+url: https://szymonwarda.com
+facebook_app_id: 598991007457968 
 
 # Owner/author information
 owner:
   name:           Szymon Warda
   avatar:         avatar.jpg
-  bio:            "Travel, code, sleep, eat. In that order."
+  bio:            "Tech advisor"
   email:          maklipsa@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        maklipsa
@@ -31,7 +31,7 @@ owner:
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-66210537-1
+google_analytics:   UA-176104735-1
 google_verify:      wZsugt7TE0b4blSPQnXxJ3f8SWyxg31cYN4NlkPa-Ow
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         

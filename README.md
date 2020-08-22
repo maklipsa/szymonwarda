@@ -1,1 +1,1 @@
-Github page for IndexOutOfRange.com
+Github page for szymonwarda.com
